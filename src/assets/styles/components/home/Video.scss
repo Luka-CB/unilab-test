@@ -1,0 +1,41 @@
+.video-title {
+  margin-bottom: 40px;
+  font-size: 40px;
+  color: #424244;
+}
+
+.video-wrapper,
+.video-wrapper-inactive {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+
+  video {
+    width: 100%;
+    border-radius: 40px;
+  }
+
+  .overlay,
+  .overlay-active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.568);
+    border-radius: 40px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .overlay-active {
+    background-color: transparent;
+  }
+
+  .video-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+}

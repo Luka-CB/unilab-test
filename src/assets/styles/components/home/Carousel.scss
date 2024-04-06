@@ -1,0 +1,82 @@
+.swiper {
+  padding: 0 10px;
+  height: 700px;
+  position: relative;
+
+  .btns {
+    position: absolute;
+    top: 2%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+    z-index: 10;
+
+    .icon-btn {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      cursor: pointer;
+
+      .fa-chevron-left,
+      .fa-chevron-right {
+        font-size: 35px;
+        transition: all 0.2s ease-in-out;
+        color: #656566;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+
+  .swiper-slide {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .image {
+        width: 380px;
+        height: 475px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 20px;
+        }
+      }
+
+      .line1 {
+        font-size: 32px;
+        color: #424244;
+        margin-top: 10px;
+      }
+
+      .line2,
+      .line3 {
+        font-size: 24px;
+        color: #424244;
+        margin-top: 10px;
+      }
+    }
+
+    // img {
+    //   display: block;
+    //   width: 100%;
+    //   height: 100%;
+    //   object-fit: cover;
+    // }
+  }
+}
