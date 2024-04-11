@@ -44,13 +44,13 @@ const BookTrip = () => {
                 <i
                   className="fa fa-chevron-up"
                   aria-hidden="true"
-                  onClick={() => toggleSelectOption(false)}
+                  onClick={() => toggleLocationOption(false)}
                 ></i>
               ) : (
                 <i
                   className="fa fa-chevron-down"
                   aria-hidden="true"
-                  onClick={() => toggleSelectOption(true)}
+                  onClick={() => toggleLocationOption(true)}
                 ></i>
               )}
             </div>
