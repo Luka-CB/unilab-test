@@ -1,0 +1,206 @@
+.book-trip_container {
+  width: 100%;
+  padding: 0 170px;
+  margin: 0 auto;
+
+  .book-trip_title {
+    font-size: 40px;
+    color: #424244;
+    padding: 50px 0 40px 0;
+  }
+
+  .inputs-wrapper {
+    .select-inputs {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      gap: 40px 80px;
+
+      .select-input {
+        height: 100px;
+        width: 100%;
+        background-color: #ffffff;
+        border-radius: 20px;
+
+        .input-content {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 50px;
+
+          .value {
+            color: #424244;
+            font-size: 28px;
+          }
+
+          .fa-chevron-down,
+          .fa-chevron-up {
+            font-size: 28px;
+            color: #747474;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+              color: black;
+            }
+          }
+        }
+
+        .options {
+          position: relative;
+          height: 644px;
+          bottom: 5px;
+          background-color: #ffffff;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          overflow-y: scroll;
+
+          &::-webkit-scrollbar {
+            width: 20px;
+          }
+
+          &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px rgb(199, 199, 199);
+            border-radius: 10px;
+            background-color: #e0e0e0;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            background: #cfcfcf;
+            border-radius: 10px;
+          }
+
+          .option-content {
+            margin: 15px 50px 25px 50px;
+
+            .item,
+            .item-active {
+              padding: 15px 0;
+              border-top: 1px solid #424244;
+              cursor: pointer;
+              transition: all 0.1s ease-in-out;
+
+              span {
+                font-size: 28px;
+              }
+
+              &:hover {
+                background-color: #4242440c;
+              }
+            }
+
+            .item-active {
+              background-color: #4242440c;
+              cursor: default;
+            }
+          }
+        }
+      }
+    }
+
+    .input-btn {
+      width: 100%;
+      height: 98px;
+      margin-top: 40px;
+      font-size: 32px;
+    }
+  }
+
+  @media (max-width: 1150px) {
+    padding: 0 40px;
+  }
+
+  @media (max-width: 800px) {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    .book-trip_title {
+      font-size: 40px;
+      color: #424244;
+      padding: 0 0 20px 20px;
+    }
+
+    .inputs-wrapper {
+      background-color: #e0e0e0;
+      padding: 20px;
+
+      .select-inputs {
+        gap: 20px;
+
+        .select-input {
+          height: 56px;
+          border-radius: 12px;
+
+          .input-content {
+            padding: 0 20px;
+
+            .value {
+              font-size: 20px;
+            }
+
+            .fa-chevron-down,
+            .fa-chevron-up {
+              font-size: 24px;
+            }
+          }
+
+          .options {
+            height: 418px;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+
+            &::-webkit-scrollbar {
+              width: 12px;
+            }
+
+            .option-content {
+              margin: 15px 38px 10px 12px;
+
+              .item,
+              .item-active {
+                span {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .input-btn {
+        height: 56px;
+        margin-top: 35px;
+        font-size: 22px;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .book-trip_title {
+      font-size: 22px;
+    }
+
+    .inputs-wrapper {
+      padding: 20px;
+
+      .select-inputs {
+        grid-template-columns: 1fr;
+        gap: 12px;
+
+        .select-input {
+          .options {
+            height: 466px;
+          }
+        }
+      }
+
+      .input-btn {
+        margin-top: 12px;
+        border-radius: 8px;
+      }
+    }
+  }
+}

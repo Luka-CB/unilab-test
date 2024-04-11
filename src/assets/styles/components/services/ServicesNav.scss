@@ -1,0 +1,52 @@
+.links {
+  width: 950px;
+  display: flex;
+  justify-content: space-between;
+
+  .link,
+  .link-active {
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #424244;
+    padding: 15px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+      background-color: #ff6700;
+      color: #ffffff;
+    }
+  }
+
+  .link-active {
+    background-color: #ff6700;
+    color: #ffffff;
+  }
+
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+
+  @media (max-width: 860px) {
+    width: 100%;
+
+    .link,
+    .link-active {
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    justify-content: flex-start;
+
+    .link,
+    .link-active {
+      &:not(:first-child) {
+        margin-left: 20px;
+      }
+    }
+  }
+}

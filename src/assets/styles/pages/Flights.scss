@@ -1,0 +1,66 @@
+.flights-container {
+  width: 100%;
+  min-height: 50vh;
+  padding: 0 170px;
+
+  @media (max-width: 1200px) {
+    padding: 0 40px;
+  }
+
+  .nav {
+    margin-top: 200px;
+
+    @import "../components/services/ServicesNav";
+  }
+
+  .search {
+    margin-top: 60px;
+
+    @import "../components/services/Search";
+  }
+
+  .content {
+    min-height: 1770px;
+    margin: 60px 0;
+    display: flex;
+
+    .filters {
+      width: 380px;
+
+      @import "../components/services/flights/filters/Filters";
+    }
+
+    .search-result {
+      flex: 1;
+      margin-left: 20px;
+
+      .items {
+        height: 1470px;
+        padding-right: 10px;
+
+        &::-webkit-scrollbar {
+          width: 15px;
+        }
+
+        &::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px rgb(199, 199, 199);
+          border-radius: 10px;
+          background-color: #e0e0e0;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: #cfcfcf;
+          border-radius: 10px;
+        }
+
+        @import "../components/services/flights/SearchResults";
+      }
+
+      .show-more_btn {
+        margin-top: 20px;
+        height: 74px;
+        font-size: 32px;
+      }
+    }
+  }
+}

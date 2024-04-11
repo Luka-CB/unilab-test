@@ -1,0 +1,171 @@
+.row1 {
+  display: flex;
+  width: 409px;
+  display: flex;
+  justify-content: space-between;
+
+  .col {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: 20px;
+      color: #424244;
+    }
+
+    .fa-chevron-down {
+      margin-left: 10px;
+      width: 32px;
+      color: #424244;
+    }
+  }
+
+  @media (max-width: 500px) {
+    width: 320px;
+
+    .col {
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.row2 {
+  margin-top: 20px;
+  display: flex;
+
+  .input {
+    width: 430px;
+    height: 70px;
+    border: 2px solid #ff6700;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 27px;
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+
+    .col1 {
+      display: flex;
+      align-items: center;
+
+      small {
+        font-size: 18px;
+        color: #424244c3;
+      }
+
+      span {
+        font-size: 20px;
+        margin-left: 10px;
+      }
+
+      .icon {
+        width: 32px;
+        height: 32px;
+        background-color: rgb(194, 193, 193);
+        border-radius: 5px;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 13px;
+        }
+      }
+    }
+
+    .col2 {
+      font-size: 40px;
+      color: #424244;
+      font-weight: 300;
+    }
+
+    input {
+      width: 100%;
+      border: none;
+      outline: none;
+      height: 100%;
+      font-size: 20px;
+      background-color: transparent;
+    }
+  }
+
+  .search-btn {
+    width: 230px;
+    height: 70px;
+    font-size: 24px;
+    margin-left: 20px;
+  }
+
+  @media (max-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    .input {
+      width: 100%;
+
+      &:not(:first-child) {
+        margin-left: 0;
+      }
+    }
+
+    .search-btn {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 650px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    .input {
+      width: 100%;
+      height: 50px;
+      border-radius: 10px;
+
+      &:not(:first-child) {
+        margin-left: 0;
+      }
+
+      .col1 {
+        display: flex;
+        align-items: center;
+
+        small {
+          font-size: 16px;
+        }
+
+        span {
+          font-size: 18px;
+        }
+
+        .icon {
+          width: 20px;
+          height: 20px;
+
+          img {
+            width: 10px;
+          }
+        }
+      }
+
+      input {
+        font-size: 18px;
+      }
+    }
+
+    .search-btn {
+      width: 100%;
+      margin-left: 0;
+      height: 60px;
+    }
+  }
+}

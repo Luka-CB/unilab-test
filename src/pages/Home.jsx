@@ -3,10 +3,14 @@ import landingImg from "../assets/images/landing-img.png";
 import DiscoverServices from "../components/home/DiscoverServices";
 import Video from "../components/home/Video";
 import Carousel from "../components/home/Carousel";
+import Blogs from "../components/home/Blogs";
+import BookTrip from "../components/home/BookTrip";
+import Head from "../components/Head";
 
 const Home = () => {
   return (
     <main className="container">
+      <Head title="Welcome | ExploreEra" />
       <section className="welcome-banner">
         <img src={landingImg} alt="banner image" className="banner-img" />
         <div className="banner-content">
@@ -24,6 +28,12 @@ const Home = () => {
       <section className="carousel">
         <h1 className="carousel-title">Popular Tour Offers</h1>
         <Carousel />
+      </section>
+      <section className="blogs">
+        <Blogs />
+      </section>
+      <section className="book-trip">
+        <BookTrip />
       </section>
     </main>
   );

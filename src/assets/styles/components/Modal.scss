@@ -1,0 +1,128 @@
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.463);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fade 0.2s ease-in-out;
+
+  .modal {
+    position: relative;
+    width: 932px;
+    height: 595px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    animation: zoom 0.2s linear;
+
+    .fa-times-circle {
+      position: absolute;
+      right: 0;
+      padding: 5px;
+      font-size: 30px;
+      color: rgb(231, 112, 112);
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: rgb(239, 80, 80);
+      }
+    }
+
+    .modal-services {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .description {
+        width: 600px;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+
+    .wrapper {
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+
+      .row1 {
+        h1 {
+          text-align: center;
+          font-size: 32px;
+          color: #424244;
+        }
+
+        p {
+          color: #424244;
+          font-size: 18px;
+          margin-top: 20px;
+        }
+      }
+
+      .row2 {
+        margin-top: 60px;
+
+        h1 {
+          text-align: center;
+          font-size: 32px;
+          color: #424244;
+        }
+
+        p {
+          color: #424244;
+          font-size: 18px;
+          margin-top: 20px;
+        }
+      }
+
+      .agree-btn {
+        margin-top: 60px;
+        width: 400px;
+        height: 50px;
+        border-radius: 10px;
+        font-size: 20px;
+        align-self: center;
+      }
+    }
+
+    @media (max-width: 800px) {
+      width: 620px;
+    }
+
+    @media (max-width: 430px) {
+      width: 340px;
+
+      .modal-services {
+        .description {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

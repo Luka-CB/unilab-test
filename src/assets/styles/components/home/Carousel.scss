@@ -32,6 +32,14 @@
     }
   }
 
+  @media (max-width: 800px) {
+    height: 550px;
+
+    .btns {
+      display: none;
+    }
+  }
+
   .swiper-slide {
     margin-top: 70px;
     text-align: center;
@@ -72,11 +80,55 @@
       }
     }
 
-    // img {
-    //   display: block;
-    //   width: 100%;
-    //   height: 100%;
-    //   object-fit: cover;
+    // @media (max-width: 1600px) {
+    //   margin-top: 80px;
+    //   height: 400px;
+    //   background-color: #4242444e;
+
+    //   .card {
+    //     .image {
+    //       width: 240px;
+    //       height: 325px;
+    //     }
+
+    //     .line1 {
+    //       font-size: 20px;
+    //       margin-top: 8px;
+    //     }
+
+    //     .line2,
+    //     .line3 {
+    //       font-size: 18px;
+    //       margin-top: 8px;
+    //     }
+    //   }
     // }
+
+    @media (max-width: 800px) {
+      margin-top: 20px;
+      height: 514px;
+
+      .card {
+        .image {
+          width: 340px;
+          height: 425px;
+        }
+
+        .line1 {
+          font-size: 20px;
+          margin-top: 8px;
+        }
+
+        .line2,
+        .line3 {
+          font-size: 18px;
+          margin-top: 8px;
+        }
+      }
+    }
+
+    @media (max-width: 430px) {
+      margin-top: 12px;
+    }
   }
 }

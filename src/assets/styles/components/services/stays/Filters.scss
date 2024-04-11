@@ -1,0 +1,44 @@
+.title {
+  font-size: 28px;
+  color: #424244;
+  padding: 0 10px 10px 0;
+  border-bottom: 2px solid #ff6700;
+  width: 120px;
+}
+
+section {
+  margin-top: 40px;
+
+  .section-title {
+    font-size: 28px;
+    color: #424244;
+  }
+
+  .inputs {
+    margin-bottom: 20px;
+
+    .input-wrapper {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+
+      input[type="checkbox"] {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+      }
+
+      label {
+        font-size: 24px;
+        color: #424244;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .show-all {
+    font-size: 18px;
+    color: #c85100;
+    text-decoration: underline;
+  }
+}

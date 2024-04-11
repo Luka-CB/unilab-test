@@ -1,0 +1,163 @@
+.row1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .col1 {
+    #name {
+      font-size: 28px;
+      color: #424244;
+      text-transform: capitalize;
+    }
+
+    .address {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+
+      span {
+        margin-left: 10px;
+        font-size: 20px;
+        color: #424244;
+      }
+    }
+  }
+
+  .col2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    span {
+      font-size: 20px;
+      color: #424244;
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+
+      #heart-icon {
+        margin-right: 20px;
+      }
+
+      #share-icon {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.row2 {
+  width: 100%;
+  margin-top: 20px;
+
+  .first {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+
+    .image {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+    }
+
+    .image-1 {
+      width: 780px;
+      height: 430px;
+      grid-column: 1 / 4;
+      grid-row: 1 / 4;
+    }
+
+    .image-2,
+    .image-3 {
+      width: 380px;
+      height: 205px;
+    }
+  }
+
+  .second {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .image,
+    .last-image {
+      width: 280px;
+      height: 186px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+    }
+
+    .last-image {
+      position: relative;
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.515);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          color: #ffffff;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+.row3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  .price,
+  .total-price {
+    width: 280px;
+    border: 2px solid #ff6700;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+
+    span {
+      font-size: 20px;
+      color: #424244;
+    }
+  }
+
+  .book-btn {
+    width: 580px;
+    border-radius: 10px;
+    height: 43px;
+    font-size: 20px;
+  }
+}
+
+p {
+  margin-top: 40px;
+  font-size: 20px;
+  color: #424244;
+}

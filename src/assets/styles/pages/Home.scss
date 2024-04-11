@@ -45,11 +45,75 @@
         text-transform: capitalize;
       }
     }
+
+    @media (max-width: 800px) {
+      height: 358px;
+
+      .banner-content {
+        .text1 {
+          font-size: 24px;
+        }
+
+        .text2 {
+          font-size: 30px;
+          margin-top: 0px;
+        }
+
+        .see-offer_btn {
+          margin-top: 12px;
+          width: 142px;
+          height: 43px;
+          font-size: 20px;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    @media (max-width: 430px) {
+      height: 217px;
+
+      .banner-img {
+        height: 217px;
+      }
+
+      .banner-content {
+        .text1 {
+          font-size: 16px;
+        }
+
+        .text2 {
+          font-size: 24px;
+        }
+
+        .see-offer_btn {
+          width: 142px;
+          height: 35px;
+          font-size: 16px;
+        }
+      }
+    }
   }
 
   .services {
     margin: 60px auto;
-    width: 80%;
+    width: 100%;
+    padding: 0 170px;
+
+    @media (max-width: 1150px) {
+      width: 100%;
+      padding: 0 40px;
+    }
+
+    @media (max-width: 800px) {
+      width: 100%;
+      padding: 0 40px;
+    }
+
+    @media (max-width: 430px) {
+      margin-top: 33px;
+      margin-bottom: 0;
+      padding: 0 45px;
+    }
 
     @import "../components/home/DiscoverServices";
   }
@@ -58,14 +122,29 @@
     margin: 0 auto;
     margin-top: 92px;
     margin-bottom: 60px;
-    width: 1580px;
+    width: 100%;
+    padding: 0 170px;
+
+    @media (max-width: 1150px) {
+      padding: 0 40px;
+    }
+
+    @media (max-width: 800px) {
+      margin-top: 60px;
+    }
+
+    @media (max-width: 430px) {
+      margin-top: 24px;
+      // width: 340px;
+    }
 
     @import "../components/home/Video";
   }
 
   .carousel {
     margin: 60px auto;
-    width: 1580px;
+    width: 100%;
+    padding: 0 170px;
     height: 770px;
     display: flex;
     align-items: flex-end;
@@ -78,6 +157,58 @@
       color: #424244;
     }
 
+    @media (max-width: 1150px) {
+      padding: 0 40px;
+    }
+
+    @media (max-width: 800px) {
+      width: 100%;
+      padding: 0 40px;
+      margin-top: 97px;
+      height: 600px;
+    }
+
+    @media (max-width: 430px) {
+      margin: 24px 0;
+      padding: 0 20px;
+
+      .carousel-title {
+        font-size: 22px;
+      }
+    }
+
     @import "../components/home/Carousel";
+  }
+
+  .blogs {
+    margin: 60px auto;
+    width: 100%;
+    padding: 0 170px;
+
+    @media (max-width: 1150px) {
+      padding: 0 40px;
+    }
+
+    @media (max-width: 800px) {
+      width: 100%;
+      margin-top: 29px;
+      padding: 0 20px;
+    }
+
+    @import "../components/home/Blogs";
+  }
+
+  .book-trip {
+    margin: 60px 0;
+    width: 100%;
+    height: 567px;
+    background-color: #e0e0e0;
+
+    @media (max-width: 800px) {
+      height: auto;
+      background-color: transparent;
+    }
+
+    @import "../components/home/BookTrip";
   }
 }

@@ -1,0 +1,151 @@
+.item {
+  width: 100%;
+  height: 192px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 40px 120px;
+  display: flex;
+  align-items: center;
+
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  .col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 70px;
+      height: 70px;
+    }
+
+    span {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  }
+
+  .col2 {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 68px;
+
+    .row1 {
+      width: 342px;
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        font-size: 24px;
+        color: #424244;
+      }
+    }
+
+    .row2 {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+
+      #take-off {
+        font-size: 24px;
+        color: #424244;
+      }
+
+      .direct,
+      .one-stop,
+      .two-stops {
+        margin-left: 20px;
+        width: 180px;
+        position: relative;
+
+        .stop-line {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: #c85100;
+        }
+      }
+
+      .one-stop {
+        .square-one {
+          position: absolute;
+          top: -7px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 15px;
+          height: 15px;
+          background-color: rgb(228, 228, 228);
+          border: 1px solid #424244;
+        }
+      }
+
+      .two-stops {
+        .square-one,
+        .square-two {
+          position: absolute;
+          top: -7px;
+          width: 15px;
+          height: 15px;
+          background-color: rgb(228, 228, 228);
+          border: 1px solid #424244;
+        }
+
+        .square-one {
+          left: 50px;
+        }
+
+        .square-two {
+          right: 50px;
+        }
+      }
+
+      #landing {
+        margin-left: 20px;
+        font-size: 24px;
+        color: #424244;
+      }
+
+      span {
+        margin-left: 20px;
+        font-size: 20px;
+        color: #4242446a;
+      }
+    }
+  }
+
+  .col3 {
+    margin-left: 68px;
+    width: 160px;
+
+    .price {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #424244;
+      padding-bottom: 20px;
+
+      span {
+        font-size: 24px;
+        color: #424244;
+      }
+
+      b {
+        font-size: 24px;
+      }
+    }
+
+    .view-btn {
+      margin-top: 20px;
+      height: 44px;
+      border-radius: 10px;
+      font-size: 20px;
+      color: #424244;
+    }
+  }
+}

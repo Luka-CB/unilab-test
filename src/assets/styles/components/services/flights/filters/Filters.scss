@@ -1,0 +1,111 @@
+.row1 {
+  padding: 20px 0 20px 30px;
+  background-color: #ffffff;
+  border-radius: 20px;
+
+  span {
+    display: block;
+    font-size: 28px;
+    color: #424244;
+    padding: 20px 20px 20px 0;
+    width: 129px;
+  }
+
+  #quickest {
+    border-top: 2px solid #ff6700;
+    border-bottom: 2px solid #ff6700;
+  }
+}
+
+.row2 {
+  margin-top: 40px;
+  padding: 20px 30px;
+  background-color: #ffffff;
+  border-radius: 20px;
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      font-size: 28px;
+      color: #424244;
+      text-transform: capitalize;
+    }
+
+    .fa-chevron-down,
+    .fa-chevron-up {
+      font-size: 23px;
+      color: #757575;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: #424244;
+      }
+    }
+  }
+
+  @import "./Stops";
+
+  @import "./Times";
+
+  .airlines {
+    margin-top: 40px;
+
+    .options {
+      height: 63px;
+      margin-top: 20px;
+      background-color: #efefef;
+    }
+  }
+
+  .airports {
+    margin-top: 40px;
+
+    .options {
+      height: 63px;
+      margin-top: 20px;
+      background-color: #efefef;
+    }
+  }
+
+  @import "./Duration";
+
+  @import "./Price";
+
+  .price-calculator {
+    margin-top: 40px;
+
+    .options {
+      margin-top: 20px;
+      width: 279px;
+
+      .input-wrapper {
+        padding-left: 5px;
+        &:not(:first-child) {
+          margin-top: 20px;
+        }
+
+        .label {
+          display: flex;
+          align-items: center;
+
+          label {
+            font-size: 20px;
+            color: #424244;
+            margin-left: 10px;
+          }
+        }
+
+        input {
+          width: 100%;
+          padding: 10px 20px;
+          margin-top: 10px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

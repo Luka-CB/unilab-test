@@ -10,6 +10,11 @@ nav {
   height: 105px;
   padding: 0 170px;
   transition: all 0.2s ease-in-out;
+  z-index: 100;
+
+  .menu {
+    display: none;
+  }
 
   .nav-items {
     display: flex;
@@ -36,7 +41,164 @@ nav {
 
     .auth-btn {
       margin-left: 42px;
+      cursor: pointer;
       transition: all 0.2s ease-in-out;
+
+      #user-img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .auth-popup {
+    background-color: #ffffff;
+    position: absolute;
+    width: 267px;
+    right: 0;
+    top: 100%;
+    border-radius: 10px;
+    margin-top: 28px;
+    margin-right: 176px;
+    padding: 10px;
+
+    .link {
+      color: #424244;
+      padding: 10px 20px;
+      font-size: 24px;
+      border-bottom: 1px solid #ff6700;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-color: #42424410;
+      }
+    }
+  }
+
+  @media (max-width: 1400px) {
+    .menu {
+      display: block;
+      position: relative;
+
+      .menu-icon {
+        cursor: pointer;
+      }
+
+      .menu-items {
+        position: absolute;
+        background-color: #ffffff;
+        top: 0;
+        right: 10%;
+        width: 238px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .close-icon {
+          padding: 16px 12px 0 0;
+          cursor: pointer;
+        }
+
+        .links {
+          padding: 20px 0 20px 48px;
+
+          .auth-links {
+            display: flex;
+            flex-direction: column;
+            border-bottom: 2px solid #424244;
+            padding-bottom: 16px;
+
+            .link {
+              font-size: 20px;
+              color: #424244;
+              cursor: pointer;
+              transition: all 0.2s ease-in-out;
+
+              &:not(:first-child) {
+                margin-top: 16px;
+              }
+
+              &:hover {
+                color: #c85100;
+              }
+            }
+          }
+
+          .nav-links {
+            display: flex;
+            flex-direction: column;
+
+            .link {
+              font-size: 20px;
+              color: #424244;
+              margin-top: 16px;
+              cursor: pointer;
+              transition: all 0.2s ease-in-out;
+
+              &:hover {
+                color: #c85100;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .nav-items {
+      display: none;
+    }
+  }
+
+  @media (max-width: 800px) {
+    height: 60px;
+    padding: 0 45px;
+
+    .logo {
+      img {
+        width: 165px;
+      }
+    }
+  }
+
+  @media (max-width: 430px) {
+    height: 48px;
+
+    .logo {
+      img {
+        width: 141px;
+      }
+    }
+
+    .menu {
+      .menu-icon {
+        width: 32px;
+      }
+
+      .menu-items {
+        width: 184px;
+        border-radius: 12px;
+
+        .links {
+          padding: 20px 0 20px 28px;
+
+          .auth-links {
+            .link {
+              font-size: 18px;
+            }
+          }
+
+          .nav-links {
+            .link {
+              font-size: 18px;
+            }
+          }
+        }
+      }
     }
   }
 }
